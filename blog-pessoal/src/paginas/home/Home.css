@@ -1,6 +1,7 @@
 .titulo{
     color: brown;
     text-align: center;
+    background-color: #110D0D;
 }
 .img{
 width: 700px;
@@ -8,3 +9,7 @@ height: 500px;
 display: block;
 margin: 0 auto;
 }
+.fundo{
+    background-color: rgb(20, 0, 0);
+}
+
