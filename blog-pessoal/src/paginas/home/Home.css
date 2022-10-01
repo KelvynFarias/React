@@ -1,15 +1,15 @@
+.caixa{
+    background-color: #00a6ff;
+}
 .titulo{
-    color: brown;
-    text-align: center;
-    background-color: #110D0D;
+    color: white !important;
+    font-weight: bold;
 }
-.img{
-width: 700px;
-height: 500px;
-display: block;
-margin: 0 auto;
+.botão{
+    border-color: white !important;
+    background-color: #013453;
+    color: white !important; 
 }
-.fundo{
-    background-color: rgb(20, 0, 0);
+.postagens{
+    background-color: white;
 }
-

@@ -1,0 +1,15 @@
+.textos1{
+    font-weight: bold;
+}
+.imagem{
+        background-image:url(https://static.vecteezy.com/system/resources/previews/001/202/146/non_2x/fishing-png.png);
+        background-repeat:no-repeat;
+        width:90vh;
+        min-height:90vh;
+        background-size:cover;
+        background-position:center;
+}
+
+.text-decorator-none{
+    text-decoration: none;
+}
