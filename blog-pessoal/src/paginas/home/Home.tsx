@@ -19,7 +19,7 @@ function Home() {
                     </Box>
                 </Grid>
                 <Grid item xs={6} >
-                    <img src="https://static.vecteezy.com/system/resources/previews/001/202/146/non_2x/fishing-png.png" alt="" width="500px" height="350px" />
+                    <img src="" alt="" width="500px" height="380px" />
                 </Grid>
                 <Grid xs={12} className="postagens">
                 </Grid>

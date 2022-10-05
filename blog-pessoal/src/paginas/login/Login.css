@@ -4,7 +4,7 @@
 .imagem{
         background-image:url(https://static.vecteezy.com/system/resources/previews/001/202/146/non_2x/fishing-png.png);
         background-repeat:no-repeat;
-        width:90vh;
+        width:80vh;
         min-height:90vh;
         background-size:cover;
         background-position:center;
@@ -12,4 +12,10 @@
 
 .text-decorator-none{
     text-decoration: none;
+}
+.botão{
+    border-color: white !important;
+    background-color: #0080ff !important;
+    color: white !important; 
+    justify-content:center
 }
