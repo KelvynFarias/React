@@ -15,11 +15,13 @@ function Navbar() {
                     </Box>
 
                     <Box display="flex" justifyContent="start">
+                    <Link to="/home" className="text-decorator-none">
                         <Box mx={1} className='cursor'>
                             <Typography variant="h6" color="inherit">
                                 home
                             </Typography>
                         </Box>
+                        </Link>
                         <Box mx={1} className='cursor'>
                             <Typography variant="h6" color="inherit">
                                 postagens
