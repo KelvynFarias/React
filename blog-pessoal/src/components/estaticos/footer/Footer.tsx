@@ -31,8 +31,8 @@ function Footer() {
                         <Box paddingTop={1}>
                             <Typography variant="subtitle2" align="center" gutterBottom className='textos' >© 2020 Copyright:</Typography>
                         </Box>
-                        <Box>
-                            <a target="_blank" href="https://brasil.generation.org">
+                        <Box >
+                            <a target="_blank" href="https://brasil.generation.org" className="text-decorator-none">
                                 <Typography variant="subtitle2" gutterBottom className='textos' align="center">brasil.generation.org</Typography>
                             </a>
                         </Box>

@@ -1,13 +1,13 @@
 .caixa{
-    background-color: #00a6ff;
+    background-color: #000000;
 }
 .titulo{
     color: white !important;
     font-weight: bold;
 }
-.botão{
+.botao{
     border-color: white !important;
-    background-color: #0080ff;
+    background-color: #23004c !important;
     color: white !important; 
 }
 .postagens{
