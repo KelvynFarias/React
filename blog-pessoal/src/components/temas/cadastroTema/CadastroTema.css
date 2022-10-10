@@ -1,10 +1,20 @@
-/* .topo{
-    margin-top: 20px;
-} */
+.topo{
+    margin-top: 0px;
+} 
 .fundo{
     min-height:100vh;
     background-repeat:no-repeat;
     background-size:cover;
     background-position:top;
-    background-image: url(https://rare-gallery.com/uploads/posts/348402-4k-wallpaper.jpg);
+    background-image: url(https://wallpapers.com/images/hd/dragon-ball-goten-group-photo-x7rvpo45souj2wjp.webp);
+}
+.finalizar{
+    background-color: #FF844E !important ;
+    color: white !important;
+    
+}
+.descricao{
+    color: white !important;
+    
+    
 }
