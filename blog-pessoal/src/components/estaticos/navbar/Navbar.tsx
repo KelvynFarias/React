@@ -1,5 +1,5 @@
 import React from 'react';
-import { AppBar, Toolbar, Typography } from '@material-ui/core';
+import { AppBar, Grid, Toolbar, Typography } from '@material-ui/core';
 import { Box } from '@mui/material';
 import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom'
@@ -17,15 +17,17 @@ function Navbar() {
     }
     return (
         <>
-            <AppBar position="static">
+            
+            <AppBar position="static" className='cor' >
                 <Toolbar variant="dense">
                     <Box className='cursor'>
                         <Typography variant="h5" color="inherit">
-                            BlogPessoal
+                            ANIME HOUSE
                         </Typography>
                     </Box>
 
-                    <Box display="flex" justifyContent="start">
+                    <Grid container justifyContent="flex-end">
+                    <Box display="flex" justifyContent="start" >
                         <Link to="/home" className="text-decorator-none">
                             <Box mx={1} className='cursor'>
                                 <Typography variant="h6" color="inherit">
@@ -62,7 +64,7 @@ function Navbar() {
                         </Box>
 
                     </Box>
-
+                    </Grid>
                 </Toolbar>
             </AppBar>
         </>

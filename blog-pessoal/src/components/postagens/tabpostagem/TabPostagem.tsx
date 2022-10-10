@@ -13,19 +13,19 @@ function TabPostagem() {
     }
     return (
         <>
-            <TabContext value={value}>
-                <AppBar position="static">
-                    <Tabs centered indicatorColor="secondary" onChange={handleChange}>
+            <TabContext value={value} >
+                <AppBar position="static"  >
+                    <Tabs centered  onChange={handleChange} className='barrinha' >
                         <Tab label="Todas as postagens" value="1" />
                         <Tab label="Sobre-nós" value="2" />
                     </Tabs>
                 </AppBar>
-                <TabPanel value="1" >
+                <TabPanel value="1" className='cores texto'>
                     <Box display="flex" flexWrap="wrap" justifyContent="center">
                         <ListaPostagem />
                     </Box>
                 </TabPanel>
-                <TabPanel value="2">
+                <TabPanel value="2" className='cores texto'>
                     <Typography variant="h5" gutterBottom color="textPrimary" component="h5" align="center" className="titulo">Sobre-nós</Typography>
                     <Typography variant="body1" gutterBottom color="textPrimary" align="justify">Pescar é bom demais</Typography>
                 </TabPanel>

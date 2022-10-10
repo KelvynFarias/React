@@ -1,3 +1,14 @@
+.texto{
+    color: white;
+
+}
 .titulo{
     font-weight: bold;
+}
+.cores{
+    background-color: #000000 !important;
+}
+
+.barrinha{
+    background-color: #FF844E !important;
 }

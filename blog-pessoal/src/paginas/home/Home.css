@@ -1,5 +1,8 @@
+
+
 .caixa{
-    background-color: #000000;
+    background: #0077ff;
+
 }
 .titulo{
     color: white !important;
@@ -7,9 +10,13 @@
 }
 .botao{
     border-color: white !important;
-    background-color: #23004c !important;
+    background-color: #FF844E !important;
     color: white !important; 
 }
 .postagens{
     background-color: white;
+}
+.margin{
+    padding: 0 !important;
+    margin: 0 !important;
 }

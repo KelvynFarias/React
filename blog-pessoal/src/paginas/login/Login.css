@@ -2,12 +2,11 @@
     font-weight: bold;
 }
 .imagem{
-        background-image:url(https://i.imgur.com/rtaOmPP.jpeg);
+        background-image:url(https://nerdhits.com.br/wp-content/uploads/2020/01/screen-0-576x1024.jpg);
         background-repeat:no-repeat;
-        width:100vh;
         min-height:100vh;
-        background-size:cover;
-        background-position:bottom;
+        background-size:contain;
+        background-position:top;
 }
 
 .text-decorator-none{

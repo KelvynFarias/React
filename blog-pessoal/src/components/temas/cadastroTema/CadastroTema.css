@@ -1,3 +1,10 @@
-.topo{
+/* .topo{
     margin-top: 20px;
+} */
+.fundo{
+    min-height:100vh;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:top;
+    background-image: url(https://rare-gallery.com/uploads/posts/348402-4k-wallpaper.jpg);
 }
