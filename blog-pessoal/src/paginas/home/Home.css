@@ -1,7 +1,12 @@
 
 
 .caixa{
-    background: #0077ff;
+    /* background: #0077ff; */
+    background-image:url(https://images8.alphacoders.com/891/891590.png) !important;
+    min-height:100vh;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:top;
 
 }
 .titulo{
@@ -10,7 +15,7 @@
 }
 .botao{
     border-color: white !important;
-    background-color: #FF844E !important;
+    background-color: #A4896D !important;
     color: white !important; 
 }
 .postagens{
@@ -19,4 +24,7 @@
 .margin{
     padding: 0 !important;
     margin: 0 !important;
+}
+.text-decorator-none{
+    text-decoration: none;
 }

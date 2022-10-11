@@ -8,7 +8,7 @@
 }
 .redes{
     font-size: 60px !important;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 .textos{
     color: white;
@@ -16,4 +16,7 @@
 }
 .text-decorator-none{
     text-decoration: none;
+}
+.cor{
+    background-color: black !important; 
 }

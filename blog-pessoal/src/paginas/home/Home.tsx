@@ -4,13 +4,17 @@ import { Box } from '@mui/material';
 import TabPostagem from '../../components/postagens/tabpostagem/TabPostagem';
 import './Home.css';
 import ModalPostagem from '../../components/postagens/modalPostagem/ModalPostagem';
-import { useNavigate } from 'react-router-dom';
-import useLocalStorage from 'react-use-localstorage';
+import { Link, useNavigate } from 'react-router-dom';
+import { useSelector } from 'react-redux';
+import { TokenState } from '../../store/tokens/tokensReducer';
+
 
 function Home() {
 
     let Navigate = useNavigate();
-    const [token, setToken] = useLocalStorage('token');
+    const token = useSelector <TokenState, TokenState["tokens"]>(
+        (state) => state.tokens
+    );
 
     useEffect(() => {
         if (token == "") {
@@ -32,11 +36,13 @@ function Home() {
                         <Box marginRight={1}>
                             <ModalPostagem />
                         </Box>
+                        <Link to="/posts" className='text-decorator-none'>
                         <Button variant="outlined" className='botao'>Ver Postagens</Button>
+                        </Link>
                     </Box>
                 </Grid>
                 <Grid item xs={6}  >
-                    <img src="https://static-goengines.gocase.com.br/uploads/image/19574/src/c6f0e9a46f1b3b1c30a16797b41e006c.png" alt="" width="700px" height="700px" />
+                    {/* <img src="https://static-goengines.gocase.com.br/uploads/image/19574/src/c6f0e9a46f1b3b1c30a16797b41e006c.png" alt="" width="700px" height="700px" /> */}
                 </Grid>
                 <Grid xs={12} className='postagens'>
                     <TabPostagem />

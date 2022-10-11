@@ -1,20 +1,29 @@
 .textos1{
-    font-weight: bold;
+    color: white;
 }
 .imagem{
-        background-image:url(https://nerdhits.com.br/wp-content/uploads/2020/01/screen-0-576x1024.jpg);
+        background-image:url(https://wallpaperaccess.com/full/3991880.jpg);
         background-repeat:no-repeat;
         min-height:100vh;
-        background-size:contain;
+        background-size:cover;
         background-position:top;
 }
 
 .text-decorator-none{
-    text-decoration: none;
+    text-decoration: none !important;
 }
 .botão{
     border-color: white !important;
     background-color: #0080ff !important;
     color: white !important; 
     justify-content:center
+}
+.botão2{
+    border-color: white !important;
+    color: white !important;
+    
+
+}
+.texto{
+    color: #0080ff;
 }

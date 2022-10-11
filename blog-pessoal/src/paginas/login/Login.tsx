@@ -2,14 +2,16 @@ import React, { useState, useEffect, ChangeEvent } from 'react';
 import { Grid, Typography, TextField, Button } from '@material-ui/core';
 import { Box } from '@mui/system';
 import { Link, useNavigate } from 'react-router-dom';
-import useLocalStorage from 'react-use-localstorage';
 import { login } from '../../services/Service';
 import UserLogin from '../../models/UserLogin';
 import './Login.css';
+import { useDispatch } from 'react-redux';
+import { addToken } from '../../store/tokens/action';
 
 function Login() {
     let navigate = useNavigate();
-    const [token, setToken] = useLocalStorage('token');
+    const dispatch = useDispatch();
+    const [token, setToken] = useState('');
     const [userLogin, setUserLogin] = useState<UserLogin>(
         {
             id: 0,
@@ -29,6 +31,7 @@ function Login() {
 
             useEffect(()=>{
                 if(token != ''){
+                    dispatch(addToken(token));
                     navigate('/home')
                 }
             }, [token])
@@ -46,31 +49,31 @@ function Login() {
         }
 
     return (
-        <Grid container direction='row' justifyContent='center' alignItems='center'>
+        <Grid container direction='row' justifyContent='center' alignItems='center'  className='imagem'>
             <Grid alignItems='center' xs={6}>
                 <Box paddingX={20}>
                     <form onSubmit={onSubmit}>
-                        <Typography variant='h3' gutterBottom color='textPrimary' component='h3' align='center' className='textos1'>Entrar</Typography>
-                        <TextField value={userLogin.usuario} onChange={(e:ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='usuario' label='usuário' variant='outlined' name='usuario' margin='normal' fullWidth />
-                        <TextField value={userLogin.senha} onChange={(e:ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='senha' label='senha' variant='outlined' name='senha' margin='normal' type='password'fullWidth />
+                        <Typography variant='h3' gutterBottom  component='h3' align='center' className='textos1'>Entrar</Typography>
+                        <TextField value={userLogin.usuario} onChange={(e:ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='usuario' label='usuário' variant='outlined' name='usuario' margin='normal'  fullWidth className='botão2'/>
+                        <TextField value={userLogin.senha} onChange={(e:ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='senha' label='senha' variant='outlined' name='senha' margin='normal' type='password'fullWidth className='botão2'/>
                         <Box marginTop={2} textAlign='center'>
-                                <Button type='submit' variant='contained' color='primary'>
+                                <Button type='submit' variant='contained' className='botão'>
                                     Logar
                                 </Button>
                         </Box>
                     </form>
                     <Box display='flex' justifyContent='center' marginTop={2}>
                         <Box marginRight={1}>
-                            <Typography variant='subtitle1' gutterBottom align='center'>Não tem uma conta?</Typography>
+                            <Typography className='botão2 textos1' variant='subtitle1' gutterBottom align='center'>Não tem uma conta?</Typography>
                         </Box>
                         <Link to='/cadastrousuario'>
-                            <Typography variant='subtitle1' gutterBottom align='center' className='textos1'>Cadastre-se</Typography>
+                            <Typography variant='subtitle1' gutterBottom align='center' className='texto text-decorator-none'>Cadastre-se</Typography>
                         </Link>
                             
                     </Box>
                 </Box>
             </Grid>
-            <Grid xs={6} className='imagem'>
+            <Grid xs={6}>
 
             </Grid>
         </Grid>

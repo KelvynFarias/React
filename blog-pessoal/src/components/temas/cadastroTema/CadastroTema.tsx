@@ -6,12 +6,16 @@ import './CadastroTema.css';
 import useLocalStorage from 'react-use-localstorage';
 import Tema from '../../../models/Tema';
 import { buscaId, post, put } from '../../../services/Service';
+import { useSelector } from 'react-redux';
+import { TokenState } from '../../../store/tokens/tokensReducer';
 
 
 function CadastroTema() {
     let Navigate = useNavigate();
     const { id } = useParams<{ id: string }>();
-    const [token, setToken] = useLocalStorage('token');
+    const token = useSelector <TokenState, TokenState["tokens"]>(
+        (state) => state.tokens
+    );
     const [tema, setTema] = useState<Tema>({
         id: 0,
         descricao: ''
@@ -80,7 +84,7 @@ function CadastroTema() {
         <Box className="fundo">
         <Container maxWidth="sm" className="topo ">
             <form onSubmit={onSubmit}>
-                <Typography variant="h3" component="h1" align="center" >Formulário de cadastro tema</Typography>
+                <Typography variant="h3" component="h1" align="center" >Formulario de cadastro tema</Typography>
                 <TextField className='descricao'value={tema.descricao} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedTema(e)} id="descricao" label="descricao" variant="outlined" name="descricao" margin="normal" fullWidth   />
                 <Button type="submit" variant="contained" className='finalizar'>
                     Finalizar
