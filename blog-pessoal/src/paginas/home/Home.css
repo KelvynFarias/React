@@ -2,15 +2,15 @@
 
 .caixa{
     /* background: #0077ff; */
-    background-image:url(https://images8.alphacoders.com/891/891590.png) !important;
-    min-height:100vh;
+    background-image:url(https://images8.alphacoders.com/114/1143485.jpg) !important;
+    min-height:70vh;
     background-repeat:no-repeat;
     background-size:cover;
     background-position:top;
 
 }
 .titulo{
-    color: white !important;
+    color: rgb(0, 0, 0) !important;
     font-weight: bold;
 }
 .botao{

@@ -54,10 +54,11 @@ function Home() {
                 <Grid item xs={6}  >
                     {/* <img src="https://static-goengines.gocase.com.br/uploads/image/19574/src/c6f0e9a46f1b3b1c30a16797b41e006c.png" alt="" width="700px" height="700px" /> */}
                 </Grid>
-                <Grid xs={12} className='postagens'>
+                
+            </Grid>
+            <Grid xs={12} className='postagens'>
                     <TabPostagem />
                 </Grid>
-            </Grid>
         </>
     );
 }

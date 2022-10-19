@@ -1,10 +1,9 @@
 .imagem2{
-    background-image:url();
+    background-image:url(https://p4.wallpaperbetter.com/wallpaper/319/432/850/anime-saint-seiya-hades-saint-seiya-wallpaper-preview.jpg);
+    min-height:100vh;
     background-repeat:no-repeat;
-    width:80vh;
-    min-height:90vh;
     background-size:cover;
-    background-position:center;
+    background-position:top;
 }
 .textos2{
     font-weight: bold !important;
@@ -13,5 +12,5 @@
     margin-right: 20px !important;
 }
 .fundo{
-    background-color: white
+    background-image: url()
 }
